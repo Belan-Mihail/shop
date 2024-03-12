@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-// import SearchIcon from "@mui/icons-material/Search";
-// import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-// import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-// import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import SearchIcon from "@mui/icons-material/Search";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
 import "./Navbar.scss"
 // import Cart from "../Cart/Cart";
@@ -19,11 +19,11 @@ const Navbar = () => {
         <div className="left">
           <div className="item">
             <img src="/img/en.png" alt="" />
-            {/* <KeyboardArrowDownIcon /> */}
+            <KeyboardArrowDownIcon />
           </div>
           <div className="item">
             <span>USD</span>
-            {/* <KeyboardArrowDownIcon /> */}
+            <KeyboardArrowDownIcon />
           </div>
           <div className="item">
             <Link className ="link" to="/products/1">Women</Link>
@@ -52,11 +52,11 @@ const Navbar = () => {
             <Link className ="link" to="/">Stores</Link>
           </div>
           <div className="icons">
-            {/* <SearchIcon/> */}
-            {/* <PersonOutlineOutlinedIcon/> */}
-            {/* <FavoriteBorderOutlinedIcon/> */}
+            <SearchIcon/>
+            <PersonOutlineOutlinedIcon/>
+            <FavoriteBorderOutlinedIcon/>
             <div className="cartIcon" onClick={()=>setOpen(!open)}>
-              {/* <ShoppingCartOutlinedIcon/> */}
+              <ShoppingCartOutlinedIcon/>
               {/* <span>{products.length}</span> */}
             </div>
           </div>
@@ -70,4 +70,6 @@ const Navbar = () => {
 export default Navbar;
 
 //6 add base html and scss
-//
+//7 install npm install @mui/material @emotion/react @emotion/styled and then npm install @mui/icons-material
+//8 add icons components (22, 26 55-57, 59)
+//9 add images to public/img, create app.scss and add styles - then go to footer

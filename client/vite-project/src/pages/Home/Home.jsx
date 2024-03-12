@@ -2,12 +2,12 @@ import React from 'react'
 // import Categories from '../../components/Categories/Categories'
 // import Contact from '../../components/Contact/Contact'
 // import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts'
-// import Slider from '../../components/Slider/Slider'
 import "./Home.scss"
+import Slider from '../../components/Slider/Slider'
 const Home = () => {
   return (
     <div className='home'>
-      Home
+      <Slider />
       {/* <Slider/>
       <FeaturedProducts type="featured"/>
       <Categories/>

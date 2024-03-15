@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import "./FeaturedProducts.scss";
+import axios from 'axios'
+
+
 // import useFetch from "../../hooks/useFetch";
 
 const FeaturedProducts = ({ type }) => {
 //   const { data, loading, error } = useFetch(
 //     `/products?populate=*&[filters][type][$eq]=${type}`
 //   );
+
+const [products, setProducts] = useState([])
+
+useEffect(() => {
+const fetchData = async () => {
+  try {
+    const data = await axios.get(process.env.REACT_APP_API_URL + '/products', {
+      headers: {
+        Authorization: 'bearer ' + process.env.REACT_APP_API_TOKEN
+      }
+      
+    })
+    console.log(data)
+  } catch (err) {
+    console.log(err)
+  }
+};
+fetchData();
+}, [])
+
+
 
   return (
     <div className="featuredProducts">
@@ -35,3 +59,5 @@ export default FeaturedProducts;
 
 //8 add base html and styles (only base)
 //9 create Card 
+
+//25 c

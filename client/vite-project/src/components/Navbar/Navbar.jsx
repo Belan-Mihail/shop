@@ -6,7 +6,7 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
 import "./Navbar.scss"
-// import Cart from "../Cart/Cart";
+import Cart from "../Cart/Cart";
 // import { useSelector } from "react-redux";
 
 const Navbar = () => {
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* {open && <Cart/>} */}
+      {open && <Cart/>}
     </div>
   );
 };
@@ -73,3 +73,5 @@ export default Navbar;
 //7 install npm install @mui/material @emotion/react @emotion/styled and then npm install @mui/icons-material
 //8 add icons components (22, 26 55-57, 59)
 //9 add images to public/img, create app.scss and add styles - then go to footer
+
+//22 add open state (13) add onClick in 58 and this state to (65) - then return to Cart
